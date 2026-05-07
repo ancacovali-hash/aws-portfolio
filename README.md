@@ -23,3 +23,30 @@ The website is publicly accessible via the S3 website endpoint.
 ### Challenges
 - Invalid bucket policy resource error
 - Access issues due to incorrect permissions
+
+
+## Project 2: Web Server on Amazon EC2
+
+### Description
+I deployed a web server on Amazon EC2 by installing Apache and configuring networking to allow public access.
+
+### AWS Services Used
+- Amazon EC2
+- Security Groups
+- Linux (Amazon Linux)
+- Apache (httpd)
+
+### Implementation Steps
+1. Launched EC2 instance
+2. Configured security group (opened ports 22 and 80)
+3. Connected via SSH
+4. Installed Apache web server
+5. Started and enabled the service
+6. Created a simple HTML page
+
+### Result
+The website is publicly accessible via the EC2 public IP address.
+
+### Challenges
+- Failed SSH connection due to closed port 22
+- Website not loading due to Apache not running
