@@ -48,5 +48,18 @@ I deployed a web server on Amazon EC2 by installing Apache and configuring netwo
 The website is publicly accessible via the EC2 public IP address.
 
 ### Challenges
-- Failed SSH connection due to closed port 22
-- Website not loading due to Apache not running
+- Failed SSH connection due to port 22 being closed in the Security Group → fixed by allowing SSH access
+- Website not accessible due to missing HTTP (port 80) rule → fixed by updating Security Group
+  
+### Cleanup
+
+- Terminated EC2 instances after testing to avoid unnecessary costs
+- Deleted unused EBS volumes
+- Ensured no running resources remained
+
+### What I Learned
+
+- How EC2 works as a virtual server
+- Importance of Security Groups and ports
+- How to install and run a web server (Apache)
+- Basic troubleshooting in cloud environments (SSH, networking, service issues)
